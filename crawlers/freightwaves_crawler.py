@@ -10,11 +10,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 import time
+from config.secret import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+
 # We can also get this AWS credentials in environment variables
-AWS_ACCESS_KEY_ID = (
-    "AKIARVGDNGHXJJMHJSA2"  # "AKIA47CRZGZ7MJPANDOS"  # "AKIA47CRZGZ7MJPANDOS"
-)
-AWS_SECRET_ACCESS_KEY = "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"  # "VEGUIPt3E/x+p5kAHQl5ToFeiszIcWI1oBzVlOP8"  # "VEGUIPt3E/x+p5kAHQl5ToFeiszIcWI1oBzVlOP8"
+AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY
 
 session = boto3.Session(
     aws_access_key_id=AWS_ACCESS_KEY_ID,

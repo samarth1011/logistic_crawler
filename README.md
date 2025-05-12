@@ -9,6 +9,7 @@ This project is a set of scalable, production-ready Python crawlers designed to 
 - [Gnosis Freight](https://www.gnosisfreight.com)
 
 All crawlers run in **parallel** via **AWS Lambda** using a `ThreadPoolExecutor`, and data is uploaded to **Amazon S3**. Error handling includes logging and **email notifications via SES**.
+We have are triggering this lmbda function on every 24 hours via AWS EventBridge Scheduler.
 
 ---
 

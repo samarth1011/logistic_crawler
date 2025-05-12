@@ -53,3 +53,16 @@ Run Crawlers Locally
 ```bash
 python crawlers/freightwaves_crawler.py
 
+```
+
+Running Unit Tests
+
+```bash
+python -m unittest discover -s tests
+```
+
+📩 Email Alerts
+If any crawler errors occur, they are emailed via AWS SES to your configured email address.
+
+
+
